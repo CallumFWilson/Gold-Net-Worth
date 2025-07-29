@@ -1,0 +1,6 @@
+config/config.json
+/config/.ipynb_checkpoints
+/scripts/.ipynb_checkpoints
+/.ipynb_checkpoints
+/scripts/__pycache__
+testing.ipynb

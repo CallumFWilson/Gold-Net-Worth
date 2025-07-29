@@ -4,3 +4,5 @@ config/config.json
 /.ipynb_checkpoints
 /scripts/__pycache__
 testing.ipynb
+/data/.ipynb_checkpoints
+data/gold_items.json

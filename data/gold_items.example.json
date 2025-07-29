@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Necklace",
+    "weight_grams": 24.70,
+    "karat": 18
+  },
+  {
+    "description": "Bracelet",
+    "weight_grams": 59.50,
+    "karat": 12
+  },
+  {
+    "description": "Ring",
+    "weight_grams": 5.00,
+    "karat": 22
+  }
+]

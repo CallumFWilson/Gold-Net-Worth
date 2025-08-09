@@ -35,14 +35,20 @@ def calculate_total_value(jewellery, gold_price):
         total += value
         print(f"{item['description']:<15}  ${value:>8.2f}   ({pure_weight:>6.2f}g pure gold)")
     print(f"\nTotal Net Value: ${total:.2f}")
+    return total
 
-def main():
+def get_total_gold_value():
     config = load_config()
     items = load_gold_items()
     gold_price = fetch_gold_price(config["api_url"], config["api_key"])
 
     print(f"Gold Price: ${gold_price:.2f} per gram\n")
-    calculate_total_value(items, gold_price)
+    total_value = calculate_total_value(items, gold_price)
+    return total_value
+
+def main():
+    total = get_total_gold_value()
+    print(f"Total Gold Value: ${total:.2f}")
 
 if __name__ == "__main__":
     main()
